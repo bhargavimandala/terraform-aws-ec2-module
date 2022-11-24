@@ -1,0 +1,83 @@
+variable "ami" {
+    type = string
+}
+variable "instance_type" {
+    type = string
+}
+variable "product" {
+    type = string
+}
+variable "environment" {
+    type = string
+}
+variable "key_name" {
+    type = string
+}
+
+variable "vpc_id" {
+    type = string
+}
+
+#variable "az" {
+ #   type = string
+#}
+
+variable "ec2_ebs_volume_size" {
+  type        = list(any)
+  default = [
+    10
+  ]
+}
+
+variable "ec2_device_names" {
+  type = list(any)
+  default = [
+    "/dev/sdd"
+  ]
+}
+#variable "ec2_delete_root_volume_on_termination" {
+ # description = "boolean the root volume deletes on termination of the instance"
+  #default = "true"
+#}
+
+#variable "ec2_rootvol_size" {
+ # default = "10"
+  #description = "Size of the Root Volume in GB"
+#}
+
+#variable "volume_type" {
+ #   type = string
+ #   default = "gp2"
+#}
+
+#variable "encrypted" {
+ #   default = "true"
+#}
+
+
+
+#variable "subnet" {
+#}
+
+variable "ec2_count" {
+    type = number
+    default = 1
+}
+
+variable "ebs_volume_count" {
+  type        = number
+  default     = 0
+}
+
+variable "availability_zones" {
+  type        = list(any)
+}
+
+variable "subnet_ids" {
+  type        = list(any)
+}
+
+
+
+
+
