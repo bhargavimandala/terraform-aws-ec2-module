@@ -58,6 +58,9 @@ variable "terraform_repo" {
   type = string
 }
 
+variable "costcode" {
+  type = number
+}
 
 
 
