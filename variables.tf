@@ -35,29 +35,6 @@ variable "ec2_device_names" {
     "/dev/sdd"
   ]
 }
-#variable "ec2_delete_root_volume_on_termination" {
- # description = "boolean the root volume deletes on termination of the instance"
-  #default = "true"
-#}
-
-#variable "ec2_rootvol_size" {
- # default = "10"
-  #description = "Size of the Root Volume in GB"
-#}
-
-#variable "volume_type" {
- #   type = string
- #   default = "gp2"
-#}
-
-#variable "encrypted" {
- #   default = "true"
-#}
-
-
-
-#variable "subnet" {
-#}
 
 variable "ec2_count" {
     type = number
@@ -75,6 +52,10 @@ variable "availability_zones" {
 
 variable "subnet_ids" {
   type        = list(any)
+}
+
+variable "terraform_repo" {
+  type = string
 }
 
 

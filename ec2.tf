@@ -19,6 +19,7 @@ resource "aws_instance" "ec2_server" {
 
   tags = {
     Name = "${var.product}-${var.environment}-ec2${count.index}"
+    terraformrepo = "${var.terraform_repo}"
   }
 }
 
