@@ -48,7 +48,7 @@ variable "ebs_volume_count" {
 
 variable "availability_zones" {
   type        = list(any)
-  default = {}
+  default = null
     
 }
 
