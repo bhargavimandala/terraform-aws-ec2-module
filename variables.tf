@@ -48,6 +48,8 @@ variable "ebs_volume_count" {
 
 variable "availability_zones" {
   type        = list(any)
+  default = {}
+    
 }
 
 variable "subnet_ids" {
